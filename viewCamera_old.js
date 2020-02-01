@@ -15,7 +15,7 @@ ViewCamera.prototype.stateChange = function() {
 	}
 };
 
-ViewCamera.prototype.render = function() {    // создаёт все элементы 
+ViewCamera.prototype.render = function() {    
 	var name = document.createElement("div");
 	name.innerHTML = "Камера";
 
@@ -50,20 +50,13 @@ ViewCamera.prototype.render = function() {    // создаёт все элем�
 	plusTemp.type = "button";
 	plusTemp.className = "inc-temp";
 	plusTemp.innerHTML = "увеличить температуру";
-	// plusTemp.addEventListener('click', () => {   
-	// 	this._camera.plusTemperature();
-	// 	term.innerHTML = "Текущая температура" + this._camera._qurentTemperature;
-	// });
+	
 
 	var minusTemp = document.createElement("Button");
 	minusTemp.type = "button";
 	minusTemp.className = "dec-temp";
 	minusTemp.innerHTML = "уменьшить температуру";
-	// minusTemp.addEventListener('click', () => {   
-	// 	this._camera.minusTemperature();
-	// 	term.innerHTML = "Текущая температура" + this._camera._qurentTemperature;
-	// });
-
+	
 	this.stateChange(); // постоянная проверка состояния
 
 	camer.appendChild(name);
