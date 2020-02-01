@@ -22,3 +22,4 @@ function Camera(model) {
 		return this._qurentMode;
 	};
 };
+};
